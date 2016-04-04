@@ -1,0 +1,6 @@
+a = load '/user/cloudera/lit2go/input/dataOut.txt' USING PigStorage('|') AS (ano:chararray, pais:chararray, texto:chararray);
+b = foreach a generate ano, pais, flatten(TOKENIZE((chararray)texto)) as word;
+c = group b by (ano, pais, word);
+d = foreach c {	generate FLATTEN(group) AS (ano, pais, word), COUNT(b);};
+e = FOREACH (group d BY (ano, pais)){ f = ORDER d by $3 desc; g = LIMIT f 150; GENERATE flatten(g);};
+store e into '/user/cloudera/lit2go/output/word_count';

@@ -1,0 +1,162 @@
+Apache Pig version 0.12.0-cdh5.5.0 (rexported) 
+compiled Nov 09 2015, 12:41:48
+
+Run pig script using PigRunner.run() for Pig version 0.8+
+2016-04-03 19:47:15,384 [uber-SubtaskRunner] INFO  org.apache.pig.Main  - Apache Pig version 0.12.0-cdh5.5.0 (rexported) compiled Nov 09 2015, 12:41:48
+2016-04-03 19:47:15,387 [uber-SubtaskRunner] INFO  org.apache.pig.Main  - Logging error messages to: /var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/cloudera/appcache/application_1459737561015_0001/container_1459737561015_0001_01_000001/pig-job_1459737561015_0001.log
+2016-04-03 19:47:15,526 [uber-SubtaskRunner] INFO  org.apache.pig.impl.util.Utils  - Default bootup file /var/lib/hadoop-yarn/.pigbootup not found
+2016-04-03 19:47:15,718 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2016-04-03 19:47:15,718 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - fs.default.name is deprecated. Instead, use fs.defaultFS
+2016-04-03 19:47:15,718 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine  - Connecting to hadoop file system at: hdfs://quickstart.cloudera:8020
+2016-04-03 19:47:15,727 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine  - Connecting to map-reduce job tracker at: localhost:8032
+2016-04-03 19:47:15,732 [uber-SubtaskRunner] WARN  org.apache.pig.PigServer  - Empty string specified for jar path
+2016-04-03 19:47:17,298 [uber-SubtaskRunner] INFO  org.apache.pig.tools.pigstats.ScriptState  - Pig features used in the script: GROUP_BY
+2016-04-03 19:47:17,681 [uber-SubtaskRunner] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer  - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, DuplicateForEachColumnRewrite, GroupByConstParallelSetter, ImplicitSplitInserter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NewPartitionFilterOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter], RULES_DISABLED=[FilterLogicExpressionSimplifier, PartitionFilterOptimizer]}
+2016-04-03 19:47:17,849 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2016-04-03 19:47:18,097 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler  - File concatenation threshold: 100 optimistic? false
+2016-04-03 19:47:18,293 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer  - Choosing to move algebraic foreach to combiner
+2016-04-03 19:47:18,428 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size before optimization: 2
+2016-04-03 19:47:18,429 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer  - MR plan size after optimization: 2
+2016-04-03 19:47:18,502 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:47:18,797 [uber-SubtaskRunner] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at localhost/127.0.0.1:8032
+2016-04-03 19:47:19,196 [uber-SubtaskRunner] INFO  org.apache.pig.tools.pigstats.ScriptState  - Pig script settings are added to the job
+2016-04-03 19:47:19,369 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2016-04-03 19:47:19,369 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2016-04-03 19:47:19,369 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2016-04-03 19:47:19,375 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Reduce phase detected, estimating # of required reducers.
+2016-04-03 19:47:19,378 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2016-04-03 19:47:19,386 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator  - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=64954982
+2016-04-03 19:47:19,386 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting Parallelism to 1
+2016-04-03 19:47:19,386 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2016-04-03 19:47:19,388 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - creating jar file Job2045609550264844189.jar
+2016-04-03 19:47:24,199 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - jar file Job2045609550264844189.jar created
+2016-04-03 19:47:24,203 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+2016-04-03 19:47:24,390 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting up single store job
+2016-04-03 19:47:24,445 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Key [pig.schematuple] is false, will not generate code.
+2016-04-03 19:47:24,445 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Starting process to move generated code to distributed cache
+2016-04-03 19:47:24,447 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Setting key [pig.schematuple.classes] with classes to deserialize []
+2016-04-03 19:47:24,788 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 1 map-reduce job(s) waiting for submission.
+2016-04-03 19:47:24,789 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2016-04-03 19:47:24,789 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2016-04-03 19:47:24,912 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at localhost/127.0.0.1:8032
+2016-04-03 19:47:24,948 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation  - fs.default.name is deprecated. Instead, use fs.defaultFS
+2016-04-03 19:47:26,883 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat  - Total input paths to process : 1
+2016-04-03 19:47:26,906 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths to process : 1
+2016-04-03 19:47:26,958 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths (combined) to process : 1
+2016-04-03 19:47:27,270 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - number of splits:1
+2016-04-03 19:47:27,480 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Submitting tokens for job: job_1459737561015_0002
+2016-04-03 19:47:27,481 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@52aa10e3)
+2016-04-03 19:47:27,481 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Kind: RM_DELEGATION_TOKEN, Service: 127.0.0.1:8032, Ident: (owner=cloudera, renewer=oozie mr token, realUser=oozie, issueDate=1459737989629, maxDate=1460342789629, sequenceNumber=2, masterKeyId=2)
+2016-04-03 19:47:28,970 [JobControl] WARN  org.apache.hadoop.mapreduce.v2.util.MRApps  - cache file (mapreduce.job.cache.files) hdfs://quickstart.cloudera:8020/user/oozie/share/lib/lib_20151118030154/pig/json-simple-1.1.jar conflicts with cache file (mapreduce.job.cache.files) hdfs://quickstart.cloudera:8020/user/oozie/share/lib/lib_20151118030154/oozie/json-simple-1.1.jar This will be an error in Hadoop 2.0
+2016-04-03 19:47:29,185 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl  - Submitted application application_1459737561015_0002
+2016-04-03 19:47:29,290 [JobControl] INFO  org.apache.hadoop.mapreduce.Job  - The url to track the job: http://quickstart.cloudera:8088/proxy/application_1459737561015_0002/
+2016-04-03 19:47:29,291 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - HadoopJobId: job_1459737561015_0002
+2016-04-03 19:47:29,291 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - Processing aliases a,b,c,d
+2016-04-03 19:47:29,291 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - detailed locations: M: a[1,4],b[-1,-1],d[4,4],c[3,4] C: d[4,4],c[3,4] R: d[4,4]
+2016-04-03 19:47:29,291 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - More information at: http://localhost:50030/jobdetails.jsp?jobid=job_1459737561015_0002
+2016-04-03 19:47:29,400 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 0% complete
+Heart beat
+2016-04-03 19:47:48,654 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+Heart beat
+2016-04-03 19:48:18,870 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+Heart beat
+2016-04-03 19:48:48,930 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:48:56,079 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 4% complete
+Heart beat
+2016-04-03 19:49:19,221 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:49:28,628 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 8% complete
+Heart beat
+2016-04-03 19:49:46,351 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:49:55,609 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 13% complete
+Heart beat
+2016-04-03 19:50:17,704 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:50:34,671 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 18% complete
+Heart beat
+2016-04-03 19:50:44,193 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 25% complete
+2016-04-03 19:50:48,047 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:51:08,207 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 41% complete
+Heart beat
+2016-04-03 19:51:14,173 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 50% complete
+2016-04-03 19:51:17,955 [uber-SubtaskRunner] INFO  org.apache.pig.tools.pigstats.ScriptState  - Pig script settings are added to the job
+2016-04-03 19:51:18,012 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2016-04-03 19:51:18,013 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Reduce phase detected, estimating # of required reducers.
+2016-04-03 19:51:18,013 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2016-04-03 19:51:18,052 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator  - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=42094013
+2016-04-03 19:51:18,053 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting Parallelism to 1
+2016-04-03 19:51:18,066 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - creating jar file Job7821094275450187055.jar
+2016-04-03 19:51:18,101 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:51:23,520 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - jar file Job7821094275450187055.jar created
+2016-04-03 19:51:23,739 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler  - Setting up single store job
+2016-04-03 19:51:23,740 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Key [pig.schematuple] is false, will not generate code.
+2016-04-03 19:51:23,741 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Starting process to move generated code to distributed cache
+2016-04-03 19:51:23,741 [uber-SubtaskRunner] INFO  org.apache.pig.data.SchemaTupleFrontend  - Setting key [pig.schematuple.classes] with classes to deserialize []
+2016-04-03 19:51:23,813 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 1 map-reduce job(s) waiting for submission.
+2016-04-03 19:51:23,813 [uber-SubtaskRunner] INFO  org.apache.hadoop.conf.Configuration.deprecation  - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2016-04-03 19:51:23,816 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at localhost/127.0.0.1:8032
+2016-04-03 19:51:24,059 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation  - fs.default.name is deprecated. Instead, use fs.defaultFS
+2016-04-03 19:51:26,612 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat  - Total input paths to process : 1
+2016-04-03 19:51:26,612 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths to process : 1
+2016-04-03 19:51:26,612 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil  - Total input paths (combined) to process : 1
+2016-04-03 19:51:28,459 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - number of splits:1
+2016-04-03 19:51:28,999 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Submitting tokens for job: job_1459737561015_0003
+2016-04-03 19:51:28,999 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@6af54cbe)
+2016-04-03 19:51:28,999 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Kind: RM_DELEGATION_TOKEN, Service: 127.0.0.1:8032, Ident: (owner=cloudera, renewer=oozie mr token, realUser=oozie, issueDate=1459737989629, maxDate=1460342789629, sequenceNumber=2, masterKeyId=2)
+2016-04-03 19:51:29,871 [JobControl] WARN  org.apache.hadoop.mapreduce.v2.util.MRApps  - cache file (mapreduce.job.cache.files) hdfs://quickstart.cloudera:8020/user/oozie/share/lib/lib_20151118030154/pig/json-simple-1.1.jar conflicts with cache file (mapreduce.job.cache.files) hdfs://quickstart.cloudera:8020/user/oozie/share/lib/lib_20151118030154/oozie/json-simple-1.1.jar This will be an error in Hadoop 2.0
+2016-04-03 19:51:29,928 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl  - Submitted application application_1459737561015_0003
+2016-04-03 19:51:29,934 [JobControl] INFO  org.apache.hadoop.mapreduce.Job  - The url to track the job: http://quickstart.cloudera:8088/proxy/application_1459737561015_0003/
+2016-04-03 19:51:29,934 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - HadoopJobId: job_1459737561015_0003
+2016-04-03 19:51:29,934 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - Processing aliases 1-1,e,g
+2016-04-03 19:51:29,934 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - detailed locations: M: 1-1[5,13] C:  R: e[5,4],g[5,66]
+2016-04-03 19:51:29,934 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - More information at: http://localhost:50030/jobdetails.jsp?jobid=job_1459737561015_0003
+Heart beat
+2016-04-03 19:51:48,148 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:52:12,494 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 58% complete
+Heart beat
+2016-04-03 19:52:16,109 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 66% complete
+2016-04-03 19:52:18,219 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:52:31,537 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 75% complete
+Heart beat
+2016-04-03 19:52:48,287 [communication thread] INFO  org.apache.hadoop.mapred.TaskAttemptListenerImpl  - Progress of TaskAttempt attempt_1459737561015_0001_m_000000_0 is : 1.0
+2016-04-03 19:52:48,849 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 96% complete
+2016-04-03 19:52:58,326 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - 100% complete
+2016-04-03 19:52:58,406 [uber-SubtaskRunner] INFO  org.apache.pig.tools.pigstats.SimplePigStats  - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.6.0-cdh5.5.0	0.12.0-cdh5.5.0	yarn	2016-04-03 19:47:19	2016-04-03 19:52:58	GROUP_BY
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTIme	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1459737561015_0002	1	1	160	160	160	160	26	26	26	26	a,b,c,d	GROUP_BY,COMBINER	
+job_1459737561015_0003	1	1	29	29	29	29	16	16	16	16	1-1,e,g	GROUP_BY	/user/cloudera/lit2go/output/word_count,
+
+Input(s):
+Successfully read 5587 records (64955371 bytes) from: "/user/cloudera/lit2go/input/dataOut.txt"
+
+Output(s):
+Successfully stored 18900 records (534081 bytes) in: "/user/cloudera/lit2go/output/word_count"
+
+Counters:
+Total records written : 18900
+Total bytes written : 534081
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1459737561015_0002	->	job_1459737561015_0003,
+job_1459737561015_0003
+
+
+2016-04-03 19:52:59,412 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:58541. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2016-04-03 19:53:00,414 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:58541. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2016-04-03 19:53:01,417 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:58541. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2016-04-03 19:53:01,538 [uber-SubtaskRunner] INFO  org.apache.hadoop.mapred.ClientServiceDelegate  - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2016-04-03 19:53:10,830 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:33782. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2016-04-03 19:53:11,831 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:33782. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+2016-04-03 19:53:12,832 [uber-SubtaskRunner] INFO  org.apache.hadoop.ipc.Client  - Retrying connect to server: quickstart.cloudera/127.0.0.1:33782. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=3, sleepTime=1000 MILLISECONDS)
+Heart beat
+2016-04-03 19:53:12,947 [uber-SubtaskRunner] INFO  org.apache.hadoop.mapred.ClientServiceDelegate  - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2016-04-03 19:53:14,185 [uber-SubtaskRunner] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher  - Success!
+Hadoop Job IDs executed by Pig: job_1459737561015_0002,job_1459737561015_0003
